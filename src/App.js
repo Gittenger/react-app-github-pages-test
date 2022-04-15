@@ -19,14 +19,14 @@ const About = () => <div style={{ textAlign: 'center' }}>ABOUT PAGE</div>
 
 function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/react-app-github-pages-test">
 			<Routes>
 				<Route path="/">
 					<Route index element={<Content />} />
 				</Route>
-				{/* <Route path="/about">
+				<Route path="/about">
 					<Route index element={<About />} />
-				</Route> */}
+				</Route>
 			</Routes>
 		</BrowserRouter>
 	)
